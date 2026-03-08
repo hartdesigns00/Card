@@ -10,16 +10,9 @@ svg{
 display: grid;
 column-gap: 80px;
 grid-template-columns: repeat(12, 1fr);
-grid-template-areas:
-"a . . . . . . . . . . ."
-". . . . . . . . . . . ."
-". . . . . . . . b . . ."
-". . . . . . . . c . . ."
-". . . . . . . . d . . ."
-". . . . . . . . . . . ."
-". . . . . . . . . . . .";}
+grid-template-rows: repeat(9, 1fr);}
 
-.HartDesignsLogo { grid-area: a;
+.HartDesignsLogo { grid-area: 9 4;
      max-width: 193.46px;
         fill: #504681;}
 .InstagramLogo { 
@@ -28,9 +21,15 @@ grid-template-areas:
     grid-area: c;}
 .webLogo{grid-area: d;}
 
-    #WebLogo{max-width: 84.23px;}
-    #emLogo{max-width: 84.23px;}
-    #iglogo{max-width: 84.23px;}
+    #WebLogo{max-width: 84.23px;
+            transition: max-width .1sec ease;}
+    #WebLogo:hover {max-width: 100px;}
+    #emLogo{max-width: 84.23px;
+            transition: max-width .1sec ease;}
+    #emLogo:hover {max-width: 100px;}
+    #iglogo{max-width: 84.23px;
+            transition: max-width .1sec ease;}
+    #iglogo:hover {max-width: 100px;}
     #EMborder{fill:#504681}
     #letter{fill: #82CCC9;}
     #IGBorder {fill: #504681}
