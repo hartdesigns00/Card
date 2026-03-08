@@ -2,18 +2,31 @@ body {
     background-image: url(Assets/Portrait1.png);
     background-size: cover;
 }
-
+svg{
+    max-width: 193.46px;
+    fill: #504681;
+}
 .container {max-width: 1440px;
- padding: 64px 80px;
 display: grid;
 column-gap: 80px;
 grid-template-columns: repeat(12, 1fr);
-grid-template-rows: repeat(4, 80px);
 grid-template-areas:
 "a . . . . . . . . . . ."
-"b b b b b b b b b b b b"
-"c c c c c c c c c c c c"
-"d d d d d d d d d d d d"
-"e e e e e e e e e e e e";}
+". . . . . . . . . . . ."
+". . . . . . . . b . . ."
+". . . . . . . . . . . ."
+". . . . . . . . . . . .";}
 
-.HartDesignsLogo { grid-area: a;}
+.HartDesignsLogo { grid-area: a;
+     max-width: 193.46px;
+        fill: #504681;}
+
+.InstagramLogo { 
+    grid-area: b;
+    }
+
+    #iglogo{
+        max-width: 84.23px;
+    }
+    #Border {fill: #504681}
+    #MainBody {fill: #82CCC9}
