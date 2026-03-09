@@ -6,13 +6,23 @@ svg{
     max-width: 193.46px;
     fill: #504681;
 }
-.container {max-width: fit-content;
+.container {
 display: grid;
-column-gap: 80px;
 grid-template-columns: repeat(12, 1fr);
-grid-template-rows: repeat(9, 1fr);}
+grid-template-rows: repeat(9, 1fr);
+grid-template-areas: 
+"a . . . . . . . . . . ."
+". . . . . . . . . . . ."
+". . . . . . . b b . . ."
+". . . . . . . c c . . ."
+". . . . . . . d d . . ."
+". . . . . . . . . . . ."
+". . . . . . . . . . . ."
+". . . . . . . . . . . ."
+". . . . . . . . . . . .";
+gap: 1.25rem;}
 
-.HartDesignsLogo { grid-area: 9 4;
+.HartDesignsLogo { grid-area: a;
      max-width: 193.46px;
         fill: #504681;}
 .InstagramLogo { 
