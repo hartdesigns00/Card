@@ -1,21 +1,23 @@
 body {
     background-image: url(Assets/Portrait1.png);
-    background-size: cover;
-}
+    background-size: fill;
+    h2 {color: #0d0922;
+    font-size: 32px;}
+    font-family: Molle;
+text-shadow: 2px 2px 3px hsl(178, 42%, 65%);}
 svg{
     max-width: 193.46px;
     fill: #504681;
 }
 .container {
+max-width: 1440px;
 display: grid;
 grid-template-columns: repeat(12, 1fr);
-grid-template-rows: repeat(9, 1fr);
 grid-template-areas: 
-"a . . . . . . . . . . ."
-". . . . . . . . . . . ."
-". . . . . . . b b . . ."
-". . . . . . . c c . . ."
-". . . . . . . d d . . ."
+"a a a . . . . . . . . ."
+"e e e e . . . . b b . ."
+". . . . . . . . c c . ."
+". . . . . . . . d d . ."
 ". . . . . . . . . . . ."
 ". . . . . . . . . . . ."
 ". . . . . . . . . . . ."
@@ -25,21 +27,21 @@ gap: 1.25rem;}
 .HartDesignsLogo { grid-area: a;
      max-width: 193.46px;
         fill: #504681;}
-.InstagramLogo { 
-    grid-area: b;}
-.EmailLogo{
-    grid-area: c;}
-.webLogo{grid-area: d;}
+.InstagramLogo { grid-area: b;}
+.EmailLogo { grid-area: c;}
+.webLogo { grid-area: d;}
+.Description {grid-area: e;}
+
 
     #WebLogo{max-width: 84.23px;
             transition: max-width .1sec ease;}
-    #WebLogo:hover {max-width: 100px;}
+        #WebLogo:hover {max-width: 100px;}
     #emLogo{max-width: 84.23px;
             transition: max-width .1sec ease;}
-    #emLogo:hover {max-width: 100px;}
+        #emLogo:hover {max-width: 100px;}
     #iglogo{max-width: 84.23px;
             transition: max-width .1sec ease;}
-    #iglogo:hover {max-width: 100px;}
+        #iglogo:hover {max-width: 100px;}
     #EMborder{fill:#504681}
     #letter{fill: #82CCC9;}
     #IGBorder {fill: #504681}
