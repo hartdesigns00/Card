@@ -1,25 +1,29 @@
 body {
     background-image: url(Assets/Portrait1.png);
     background-size: fill;
-    h2 {color: #0d0922;
-    font-size: 32px;}
+    h2 {color: #a694ff;
+    font-size: 48px;}
     font-family: Molle;
-text-shadow: 2px 2px 3px hsl(178, 42%, 65%);}
+text-shadow: 2px 2px 3px hsl(179, 100%, 8%);
+white-space: nowrap;
+.custom-cursor-area {cursor: url("Cursor.svg");}
+}
 svg{
     max-width: 193.46px;
     fill: #504681;
 }
+
 .container {
 max-width: 1440px;
 display: grid;
+grid-template-rows:110px;
 grid-template-columns: repeat(12, 1fr);
 grid-template-areas: 
-"a a a . . . . . . . . ."
-"e e e e . . . . b b . ."
+"a a . . . . . . . . . . "
+"e e e e . . . . . . . ."
+". . . . . . . . b b . ."
 ". . . . . . . . c c . ."
 ". . . . . . . . d d . ."
-". . . . . . . . . . . ."
-". . . . . . . . . . . ."
 ". . . . . . . . . . . ."
 ". . . . . . . . . . . .";
 gap: 1.25rem;}
@@ -30,16 +34,17 @@ gap: 1.25rem;}
 .InstagramLogo { grid-area: b;}
 .EmailLogo { grid-area: c;}
 .webLogo { grid-area: d;}
-.Description {grid-area: e;}
+.Description {grid-area: e;
+align-self: start;}
 
 
-    #WebLogo{max-width: 84.23px;
+    #WebLogo{max-width: 94.23px;
             transition: max-width .1sec ease;}
         #WebLogo:hover {max-width: 100px;}
-    #emLogo{max-width: 84.23px;
+    #emLogo{max-width: 94.23px;
             transition: max-width .1sec ease;}
         #emLogo:hover {max-width: 100px;}
-    #iglogo{max-width: 84.23px;
+    #iglogo{max-width: 88.23px;
             transition: max-width .1sec ease;}
         #iglogo:hover {max-width: 100px;}
     #EMborder{fill:#504681}
