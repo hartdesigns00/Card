@@ -1,13 +1,18 @@
 body {
+    cursor: url("Cursor.svg"), auto;
     background-image: url(Assets/Portrait1.png);
     background-size: fill;
-    h2 {color: #a694ff;
-    font-size: 48px;}
+    cursor: url("Assets/Cursor.svg"), auto;
+}
+    h2 {
+    color: #a694ff;
+    font-size: 48px;
     font-family: Molle;
 text-shadow: 2px 2px 3px hsl(179, 100%, 8%);
 white-space: nowrap;
-.custom-cursor-area {cursor: url("Cursor.svg");}
-}
+    }
+
+
 svg{
     max-width: 193.46px;
     fill: #504681;
