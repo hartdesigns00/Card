@@ -4,7 +4,13 @@ body {
     background-size: fill;
     cursor: url("Assets/Cursor.svg"), auto;
 }
-    h2 {
+    
+h1 {color: #a694ff;
+    font-size: 72px;
+    font-family: Molle;
+text-shadow: 2px 2px 3px hsl(179, 100%, 8%);
+white-space: nowrap;}
+h2 {
     color: #a694ff;
     font-size: 48px;
     font-family: Molle;
@@ -21,12 +27,12 @@ svg{
 .container {
 max-width: 1440px;
 display: grid;
-grid-template-rows:110px;
+grid-template-rows:170px 110px 60px 70px 110px 110px 110px;
 grid-template-columns: repeat(12, 1fr);
 grid-template-areas: 
-"a a . . . . . . . . . . "
-"e e e e . . . . . . . ."
-". . . . . . . . b b . ."
+"a a . . . . . . . . . ."
+"f f . . . . . . . . . ."
+"e e e e . . . . b b . ."
 ". . . . . . . . c c . ."
 ". . . . . . . . d d . ."
 ". . . . . . . . . . . ."
@@ -40,7 +46,9 @@ gap: 1.25rem;}
 .EmailLogo { grid-area: c;}
 .webLogo { grid-area: d;}
 .Description {grid-area: e;
-align-self: start;}
+align-self: end;}
+.Name {grid-area: f;
+align-self: end;}
 
 
     #WebLogo{max-width: 94.23px;
