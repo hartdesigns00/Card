@@ -1,4 +1,5 @@
 body {
+    background-size: 1440;
     background-image: url(Assets/Portrait1.png);
     background-size: cover;
     cursor: url("Assets/Cursor.svg"), auto;
@@ -10,7 +11,7 @@ h1 {color: #a694ff;
 text-shadow: 2px 2px 3px hsl(179, 100%, 8%);
 white-space: nowrap;}
 h2 {
-    color: #a694ff;
+    color: #82CCC9;
     font-size: 48px;
     font-family: Molle;
 text-shadow: 2px 2px 3px hsl(179, 100%, 8%);
@@ -26,7 +27,7 @@ svg{
 .container {
 max-width: 1440px;
 display: grid;
-grid-template-rows:170px 110px 60px 70px 110px 110px 110px;
+grid-template-rows:190px 100px 60px 70px 110px 110px 110px;
 grid-template-columns: repeat(12, 1fr);
 grid-template-areas: 
 "a a . . . . . . . . . ."
@@ -69,3 +70,5 @@ align-self: end;}
     #letter{fill: #82CCC9;}
     #IGBorder {fill: #504681}
     #MainBody {fill: #82CCC9}
+    #webborder {fill: #504681}
+    #webfill{fill: #82CCC9}
