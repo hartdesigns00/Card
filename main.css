@@ -1,5 +1,4 @@
 body {
-    cursor: url("Cursor.svg"), auto;
     background-image: url(Assets/Portrait1.png);
     background-size: fill;
     cursor: url("Assets/Cursor.svg"), auto;
@@ -49,6 +48,9 @@ gap: 1.25rem;}
 align-self: end;}
 .Name {grid-area: f;
 align-self: end;}
+
+.no-cursor-change:hover {
+  cursor: default;}
 
 
     #WebLogo{max-width: 94.23px;
